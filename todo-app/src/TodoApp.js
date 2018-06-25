@@ -2,7 +2,7 @@
 * @Author: duqinzhi
 * @Date:   2018-06-23 19:09:34
 * @Last Modified by:   duqinzhi
-* @Last Modified time: 2018-06-24 16:04:54
+* @Last Modified time: 2018-06-24 19:41:50
 */
 
 //引入react及其他组件
@@ -10,6 +10,7 @@ import React from 'react';
 import TodoHeader from './TodoHeader.js';
 import TodoItem from './TodoItem.js';
 import TodoFooter from './TodoFooter.js';
+
 import * as filterTypes from './filterTypes.js'
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -28,6 +29,7 @@ export default class TodoApp extends React.Component{
 		let todos = [...this.state.todos,todo];  //把新增的todo放进todos
 		this.setState({todos});  //更新数据
 	}
+
 	//当多选框改变的时候，改变completed的值
 	toggle = (id)=>{  
 		let todos = this.state.todos;
